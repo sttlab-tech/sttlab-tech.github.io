@@ -1,0 +1,62 @@
+# Technical configuration
+title: "Stéphane Tailland" # Fallback technique seulement
+description: "Stéphane Tailland - Blog" # SEO meta description - utilisé par les moteurs de recherche dans les snippets
+baseurl: "" # Sous-dossier si hébergé dans un path (ex: /mon-site)
+url: "https://blog.sttlab.eu" # URL complète du site en production (pour les liens absolus)
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Localization
+plugins_dir: _plugins
+locale: en_US
+timezone: Europe/Paris
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude files from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Collections and defaults
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:year/:month/:day/:title/
+  demos:
+    output: true
+    permalink: /:collection/:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "demos"
+    values:
+      layout: "demo"
+
+# Social links
+social:
+  linkedin: "stailland"
+  github: "sttlab-tech"

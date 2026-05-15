@@ -1,0 +1,73 @@
+---
+layout: default
+---
+
+<article class="section" style="padding-top: 2rem;">
+  <div class="container">
+    <div class="post-back-to-blog fade-in" style="margin-bottom: 2rem;">
+      <a href="{{ '/demos/' | relative_url }}" class="btn btn--outline">
+        {% if page.lang == 'fr' %}
+          ← Retour aux démos
+        {% else %}
+          ← Back to demos
+        {% endif %}
+      </a>
+    </div>
+
+    <div class="post-header fade-in">
+      <div class="post-meta">
+        <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">
+          {% if page.lang == 'fr' %}
+            {% assign day = page.date | date: "%-d" %}
+            {% assign month = page.date | date: "%-m" %}
+            {% assign year = page.date | date: "%Y" %}
+            {% case month %}
+              {% when '1' %}{{ day }} janvier {{ year }}
+              {% when '2' %}{{ day }} février {{ year }}
+              {% when '3' %}{{ day }} mars {{ year }}
+              {% when '4' %}{{ day }} avril {{ year }}
+              {% when '5' %}{{ day }} mai {{ year }}
+              {% when '6' %}{{ day }} juin {{ year }}
+              {% when '7' %}{{ day }} juillet {{ year }}
+              {% when '8' %}{{ day }} août {{ year }}
+              {% when '9' %}{{ day }} septembre {{ year }}
+              {% when '10' %}{{ day }} octobre {{ year }}
+              {% when '11' %}{{ day }} novembre {{ year }}
+              {% when '12' %}{{ day }} décembre {{ year }}
+            {% endcase %}
+          {% else %}
+            {{ page.date | date: "%B %d, %Y" }}
+          {% endif %}
+        </time>
+        {% if page.tags %}
+          <div class="post-tags">
+            {% for tag in page.tags %}
+              <span class="post-tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+      
+      <h1 class="post-title">{{ page.title }}</h1>
+      
+      {% if page.description %}
+        <p class="post-description">{{ page.description }}</p>
+      {% endif %}
+    </div>
+
+    <div class="post-content fade-in">
+      {{ content }}
+    </div>
+
+    <div class="post-back-to-blog fade-in" style="margin-top: 2rem;">
+      <a href="{{ '/demos/' | relative_url }}" class="btn btn--outline">
+        {% if page.lang == 'fr' %}
+          ← Retour aux démos
+        {% else %}
+          ← Back to demos
+        {% endif %}
+      </a>
+    </div>
+
+  </div>
+</article>

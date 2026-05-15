@@ -1,0 +1,34 @@
+# Site information
+title: "Stéphane Tailland"
+description: "Solutions Architect specialized in Enterprise Integration. I help enterprises modernize their integration architecture with a client-focused approach."
+
+# Profile section
+profile:
+  name: "Stéphane Tailland"
+  subtitle: "Solutions Architect specialized in Enterprise Integration"
+  description: "I help enterprises modernize their integration architecture <br>with a client-focused approach."
+  avatar: "./Photo.jpg"
+  alt_text: "Stéphane Tailland"
+  cta_primary:
+    text: "Get In Touch"
+    link: "#contact"
+  # cta_secondary:
+  #   text: "View Demos"
+  #   link: "/demos.html"
+
+# Navigation menu
+navigation:
+  - name: "About"
+    link: "#about"
+  - name: "Experience"
+    link: "#experience"
+  # - name: "Repos"
+  #   link: "/repos.html"
+  # - name: "Demos"
+  #   link: "/demos.html"
+  # - name: "Links"
+  #   link: "#links"
+  - name: "Blog"
+    link: "/blog.html"
+  - name: "Contact"
+    link: "#contact"

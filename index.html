@@ -1,0 +1,115 @@
+---
+layout: default
+title: Home
+---
+
+<!-- Hero Section -->
+<section id="hero" class="hero section">
+  <div class="container">
+    <div class="hero__content fade-in">
+      <div class="hero__avatar">
+        <img src="{{ site.data.site.profile.avatar }}" alt="{{ site.data.site.profile.alt_text }}" />
+      </div>
+      
+      <h1 class="hero__title">{{ site.data.site.profile.name }}</h1>
+      <h2 class="hero__subtitle">{{ site.data.site.profile.subtitle }}</h2>
+      
+      <p class="hero__description">
+        {{ site.data.site.profile.description }}
+      </p>
+      
+      <div class="hero__cta">
+        <a href="{{ site.data.site.profile.cta_primary.link }}" class="btn btn--primary">{{ site.data.site.profile.cta_primary.text }}</a>
+        {% if site.data.site.profile.cta_secondary %}
+        <a href="{{ site.data.site.profile.cta_secondary.link }}" class="btn btn--outline">{{ site.data.site.profile.cta_secondary.text }}</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section__title fade-in">About Me</h2>
+    
+    <div class="grid grid--1-cols">
+      <div class="hero__description">
+        <p>{{ site.data.about.content }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="section">
+  <div class="container">
+    <h2 class="section__title fade-in">Professional Experience</h2>
+    
+    <div class="timeline fade-in">
+      {% for job in site.data.experience %}
+      <div class="timeline__item">
+        <div class="timeline__date">{{ job.date }}</div>
+        <h3 class="timeline__title">{{ job.title }}</h3>
+        <div class="timeline__company">{{ job.company }}</div>
+        <p class="timeline__description">{{ job.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+
+
+{% comment %}
+<!-- Links Section -->
+<section id="links" class="section">
+  <div class="container">
+    <h2 class="section__title fade-in">Useful Links</h2>
+
+    <div class="grid grid--3-cols">
+      {% for link in site.data.links %}
+      <div class="link-card fade-in">
+        <h3 class="link-card__title">{{ link.title }}</h3>
+        <p class="link-card__description">{{ link.description }}</p>
+        <a href="{{ link.url }}" class="link-card__btn" target="_blank" rel="noopener noreferrer">{{ link.button_text }}</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endcomment %}
+
+<!-- Contact Section -->
+<section id="contact" class="section">
+  <div class="container">
+    <h2 class="section__title fade-in">Get In Touch</h2>
+    
+    <div class="contact-center fade-in" style="text-align: center; max-width: 600px; margin: 0 auto;">
+      <h3>Let's connect on LinkedIn</h3>
+      <p>The best way to reach me for professional discussions and opportunities</p>
+      
+      <div class="contact-linkedin" style="margin: 3rem 0;">
+        <div class="contact-linkedin__card">
+          <div class="contact-linkedin__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </div>
+          <div class="contact-linkedin__content">
+            <a href="https://linkedin.com/in/{{ site.social.linkedin }}" target="_blank" class="contact-linkedin__btn">
+              <span>Connect with me</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <p class="contact-response-time">
+        Response time: Usually within 24 hours
+      </p>
+    </div>
+  </div>
+</section>

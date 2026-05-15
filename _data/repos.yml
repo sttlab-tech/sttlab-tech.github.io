@@ -1,0 +1,10 @@
+- title: "title"
+  description: >
+    description
+  url: "https://github.com/sttlab-tech/sttlab-tech.github.io"
+  products:
+    - "abcd"
+    - "efgh"
+  tags:
+    - "ijkl"
+    - "mnop"

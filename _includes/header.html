@@ -1,0 +1,19 @@
+<header class="header">
+  <div class="container">
+    <nav class="header__nav">
+      <a href="{{ '/' | relative_url }}" class="header__logo">{{ site.data.site.title }}</a>
+      
+      <ul class="header__menu">
+        {% for item in site.data.site.navigation %}
+        <li class="header__menu-item">
+          {% if item.link contains '#' %}
+          <a href="{% if page.url == '/' %}{{ item.link }}{% else %}{{ '/' | relative_url }}{{ item.link }}{% endif %}">{{ item.name }}</a>
+          {% else %}
+          <a href="{{ item.link | relative_url }}">{{ item.name }}</a>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

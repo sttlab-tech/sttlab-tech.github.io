@@ -1,0 +1,172 @@
+// Reset and base styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: $font-family-primary;
+  font-size: $font-size-base;
+  font-weight: $font-weight-normal;
+  line-height: 1.6;
+  color: $text-primary;
+  background-color: $primary-bg;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-headings;
+  font-weight: $font-weight-bold;
+  line-height: 1.2;
+  margin-bottom: $spacing-base;
+  color: $text-primary;
+}
+
+h1 {
+  font-size: $font-size-5xl;
+  
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-size-4xl;
+  }
+}
+
+h2 {
+  font-size: $font-size-4xl;
+  
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-size-3xl;
+  }
+}
+
+h3 {
+  font-size: $font-size-3xl;
+  
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-size-2xl;
+  }
+}
+
+h4 {
+  font-size: $font-size-2xl;
+  
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-size-xl;
+  }
+}
+
+h5 {
+  font-size: $font-size-xl;
+}
+
+h6 {
+  font-size: $font-size-lg;
+}
+
+p {
+  margin-bottom: $spacing-base;
+  color: $text-secondary;
+  line-height: 1.7;
+}
+
+a {
+  color: $accent-emerald;
+  text-decoration: none;
+  transition: color $transition-fast;
+  
+  &:hover {
+    color: $accent-emerald-light;
+  }
+}
+
+// Lists
+ul, ol {
+  margin-bottom: $spacing-base;
+  padding-left: $spacing-lg;
+}
+
+li {
+  margin-bottom: $spacing-xs;
+  color: $text-secondary;
+}
+
+// Images
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Buttons
+.btn {
+  display: inline-block;
+  padding: $spacing-sm $spacing-lg;
+  font-family: $font-family-primary;
+  font-size: $font-size-base;
+  font-weight: $font-weight-medium;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all $transition-base;
+  
+  &--primary {
+    background-color: $accent-emerald;
+    border-color: $accent-emerald;
+    color: $text-dark;
+    
+    &:hover {
+      background-color: $accent-emerald-light;
+      border-color: $accent-emerald-light;
+      color: $text-dark;
+    }
+  }
+  
+  &--outline {
+    background-color: transparent;
+    border-color: $accent-emerald;
+    color: $accent-emerald;
+    
+    &:hover {
+      background-color: $accent-emerald;
+      color: $text-dark;
+    }
+  }
+}
+
+// Utilities
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-base;
+  
+  @media (min-width: $breakpoint-sm) {
+    padding: 0 $spacing-lg;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-accent {
+  color: $accent-emerald;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all $transition-slow;
+  
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

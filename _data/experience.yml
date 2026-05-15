@@ -1,0 +1,34 @@
+- date: "2024 - Present"
+  title: "Presales consultant"
+  company: "IBM France"
+  description: "Pre-sales consultant specialized in IBM webMethods Hybrid Integration"
+
+- date: "2022 - 2024"
+  title: "Presales consultant"
+  company: "Software AG"
+  description: "Worked as a pre-sales consultant for the webMethods product suite, specializing in API Management, integration microservices, iPaaS, ESB, MFT and B2B integration."
+
+- date: "2019 - 2022"
+  title: "Business Analyst | Architect"
+  company: "Allianz Technology"
+  description: "Contributed to Allianz's API and event center of excellence by evolving core models, defining governance and best practices, supporting projects and architecture, and modernizing the API developer portal."
+
+- date: "2015 - 2019"
+  title: "Business Analyst, then Product Owner"
+  company: "Euler Hermes Group Organization"
+  description: "Led the development of a document dematerialization solution with legal archiving and digital signature, later taking on the role of product owner."
+
+- date: "2012 - 2014"
+  title: "Business Analyst"
+  company: "Euler Hermes Group Organization"
+  description: "Applied my technical expertise and architect mindset to support Euler Hermes' B2B integration solution, acting as a bridge between business and IT while assisting customers and sales with SOAP-based services."
+
+- date: "2004 - 2011"
+  title: "Developer then Project Manager"
+  company: "Euler Hermes Group IT"
+  description: "Started as a backend developer and gradually expanded my expertise into management and architecture."
+
+- date: "2000 - 2004"
+  title: "Mainframe Developer"
+  company: "AGF (now known as Allianz France)"
+  description: "Worked as a Mainframe developer with a specialization in batch process and DB2 optimization."

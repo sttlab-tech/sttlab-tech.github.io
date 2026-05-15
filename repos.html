@@ -1,0 +1,41 @@
+---
+layout: default
+title: Repositories
+---
+
+<!-- Repos Page -->
+<section class="section" style="margin-top: 80px;">
+  <div class="container">
+    <h1 class="section__title fade-in">GitHub Repositories</h1>
+    
+    <div class="grid grid--2-cols" style="grid-template-columns: repeat(2, 1fr);">
+      {% for repo in site.data.repos %}
+      <div class="repo-card fade-in">
+        <div class="repo-card__header">
+          <h3 class="repo-card__title">{{ repo.title }}</h3>
+          <div class="repo-card__meta">
+            {% if repo.products %}
+              {% for product in repo.products %}
+                <span class="repo-card__product">{{ product }}</span>
+              {% endfor %}
+            {% endif %}
+          </div>
+        </div>
+        <div class="repo-card__content">
+          <div class="repo-card__description">{{ repo.description }}</div>
+          <div class="repo-card__tags">
+            {% for tag in repo.tags %}
+            <span class="repo-card__tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="repo-card__actions">
+          <a href="{{ repo.url }}" target="_blank" rel="noopener noreferrer" class="repo-card__btn">
+            View Repository
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
