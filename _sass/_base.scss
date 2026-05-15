@@ -120,12 +120,12 @@ img {
   &--primary {
     background-color: $accent-emerald;
     border-color: $accent-emerald;
-    color: $text-dark;
-    
+    color: $text-primary;
+
     &:hover {
       background-color: $accent-emerald-light;
       border-color: $accent-emerald-light;
-      color: $text-dark;
+      color: $text-primary;
     }
   }
   
