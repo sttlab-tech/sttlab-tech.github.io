@@ -41,25 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Header background opacity on scroll
-  const header = document.querySelector('.header');
-  let lastScrollTop = 0;
-
-  window.addEventListener('scroll', function() {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    
-    // Add background opacity based on scroll position
-    if (scrollTop > 100) {
-      header.style.backgroundColor = 'rgba(26, 26, 26, 0.95)';
-      header.style.backdropFilter = 'blur(10px)';
-    } else {
-      header.style.backgroundColor = 'rgba(26, 26, 26, 0.8)';
-      header.style.backdropFilter = 'blur(5px)';
-    }
-    
-    lastScrollTop = scrollTop;
-  });
-
 
 
   // Animated counter for stats
