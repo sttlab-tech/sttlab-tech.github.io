@@ -20,11 +20,11 @@
   &__logo {
     font-size: $font-size-xl;
     font-weight: $font-weight-bold;
-    color: $accent-emerald-light;
+    color: $accent-emerald;
     text-decoration: none;
-    
+
     &:hover {
-      color: $accent-emerald;
+      color: $accent-emerald-light;
     }
   }
   
@@ -104,7 +104,7 @@
   &__title {
     font-size: $font-size-5xl;
     margin-bottom: $spacing-base;
-    color: $accent-emerald-light;
+    color: $text-primary;
     
     @media (max-width: $breakpoint-lg) {
       font-size: $font-size-4xl;
