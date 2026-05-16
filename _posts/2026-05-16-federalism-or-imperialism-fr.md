@@ -5,12 +5,10 @@ date: 2026-05-16
 lang: fr
 published: true
 tags: [gouvernance, fédéralisme, souveraineté]
-description: "Les organisations agiles ont conquis les années 2010 au nom du time-to-market. Le durcissement réglementaire et géopolitique réclame désormais davantage de contrôle. Le fédéralisme offre-t-il la synthèse pour les systèmes d'information, ou se dirige-t-on vers un modèle impérialiste imposé par les hyperscalers ?"
+description: "Les organisations agiles et les architectures distribuées ont conquis les années 2010 au nom du time-to-market. Mais le durcissement de l'environnement — réglementaire, économique, géopolitique — réclame désormais davantage de contrôle. Le fédéralisme, qui a su concilier autonomie et unité dans l'ordre politique, offre-t-il la synthèse pour les systèmes d'information ? Ou se dirige-t-on vers un modèle impérialiste, à l'image du monde dans lequel nous vivons aujourd'hui ?"
 read_time: 6
 ---
 
-
-*Les organisations agiles et les architectures distribuées ont conquis les années 2010 au nom du time-to-market. Mais le durcissement de l'environnement — réglementaire, économique, géopolitique — réclame désormais davantage de contrôle. Le fédéralisme, qui a su concilier autonomie et unité dans l'ordre politique, offre-t-il la synthèse pour les systèmes d'information ? Ou bien se dirige-t-on vers un modèle impérialiste — à l'image du monde dans lequel nous vivons aujourd'hui ?*
 
 ## La décennie de l'autonomie
 

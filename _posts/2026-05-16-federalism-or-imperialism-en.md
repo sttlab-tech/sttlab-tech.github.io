@@ -5,12 +5,10 @@ date: 2026-05-16
 lang: en
 published: true
 tags: [governance, federalism, sovereignty]
-description: "Agile organizations conquered the 2010s in the name of time-to-market. Tightening regulatory and geopolitical pressure now demands more control. Does federalism offer the synthesis for information systems, or are we heading toward an imperialist model imposed by hyperscalers?"
+description: "Agile organizations and distributed architectures conquered the 2010s in the name of time-to-market. But the tightening environment — regulatory, economic, geopolitical — now demands more control. Federalism reconciled autonomy and unity in the political order: does it offer the same synthesis for information systems? Or are we heading toward an imperialist model, mirroring the world we live in today?"
 read_time: 6
 ---
 
-
-*Agile organizations and distributed architectures conquered the 2010s in the name of time-to-market. But the tightening environment — regulatory, economic, geopolitical — now demands more control. Federalism, which managed to reconcile autonomy and unity in the political order, does it offer the synthesis for information systems? Or are we heading toward an imperialist model — mirroring the world we live in today?*
 
 ## The decade of autonomy
 
