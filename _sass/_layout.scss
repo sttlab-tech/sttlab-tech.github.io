@@ -4,8 +4,8 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba($primary-bg, 0.95);
-  backdrop-filter: blur(10px);
+  background-color: $secondary-bg;
+  box-shadow: 0 1px 0 $border-color;
   border-bottom: 1px solid $border-color;
   z-index: 1000;
   transition: all $transition-base;
@@ -43,10 +43,10 @@
     margin-left: $spacing-lg;
     
     a {
-      color: $text-secondary;
+      color: $text-primary;
       font-weight: $font-weight-medium;
       transition: color $transition-fast;
-      
+
       &:hover {
         color: $accent-emerald;
       }
