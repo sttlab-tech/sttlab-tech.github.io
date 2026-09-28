@@ -1,11 +1,11 @@
 # Site information
 title: "Stéphane Tailland"
-description: "Solutions Architect specialized in Enterprise Integration. I help enterprises modernize their integration architecture with a client-focused approach."
+description: "Solutions Engineer specialized in Enterprise Integration. I help enterprises modernize their integration architecture with a client-focused approach."
 
 # Profile section
 profile:
   name: "Stéphane Tailland"
-  subtitle: "Solutions Architect specialized in Enterprise Integration"
+  subtitle: "Solutions Engineer specialized in Enterprise Integration"
   description: "I help enterprises modernize their integration architecture <br>with a client-focused approach."
   avatar: "./Photo.jpg"
   alt_text: "Stéphane Tailland"
