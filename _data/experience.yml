@@ -9,24 +9,24 @@
   description: "Pre-sales activities for the webMethods product suite: API Management, Application Integration, Messaging, MFT and B2B integration."
 
 - date: "2019 - 2022"
-  title: "Business Analyst | Architect"
+  title: "API Architect"
   company: "Allianz Technology"
   description: "Contributed to Allianz's API and event center of excellence by evolving core models, defining governance and best practices, supporting projects and architecture, and modernizing the API developer portal."
 
 - date: "2015 - 2019"
-  title: "Business Analyst, then Product Owner"
+  title: "API Product Manager"
   company: "Euler Hermes Group Organization"
-  description: "Led the development of a document dematerialization solution with legal archiving and digital signature, later taking on the role of product owner."
+  description: "Led the development of a document dematerialization solution with legal archiving, digital signature and e-invoicing, then managed it as a product."
 
 - date: "2012 - 2014"
-  title: "Business Analyst"
+  title: "Business-facing Technical Lead"
   company: "Euler Hermes Group Organization"
-  description: "Applied my technical expertise and architect mindset to support Euler Hermes' B2B integration solution, acting as a bridge between business and IT while assisting customers and sales with SOAP-based services."
+  description: "Applied my technical expertise and architect mindset to support Euler Hermes' B2B integration solution, acting as a bridge between business and IT while assisting customers and sales with SOAP-based services, scaling adoption from ~30 to 100+ clients and partners."
 
 - date: "2004 - 2011"
   title: "Developer then Project Manager"
   company: "Euler Hermes Group IT"
-  description: "Started as a backend developer and gradually expanded my expertise into management and architecture."
+  description: "Started as a backend developer and gradually expanded my expertise into management and architecture: led the APIfication of a core risk-management system (CICS/DB2/MQ) with contract-first APIs, then the delivery of the Group IAM platform, including the Group Customer PKI."
 
 - date: "2000 - 2004"
   title: "Mainframe Developer"
